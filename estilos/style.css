@@ -153,7 +153,7 @@ article.skills {
     grid-template-columns: 1fr;
 }
 
-div.item {
+div.item-container {
     margin: 10px;
 }
 
@@ -183,7 +183,34 @@ progress::-webkit-progress-value {
     border-radius: 10px;
 }
 
+div.formacao-container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+div.ficha-formacao {
+    background-color: var(--fundo);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 5px solid var(--destaque);
+}
+
+h3.instituicao {
+    color: var(--destaque);
+    margin: 5px 0px;
+}
+
+div.ficha-formacao p {
+    font-weight: bold;
+}
+
 @media screen and (min-width: 768px) {
+
+    header {
+        justify-content: flex-end;
+    }
+
     article.skills {
         grid-template-columns: 1fr 1fr;
     }

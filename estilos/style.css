@@ -13,6 +13,11 @@
     --fundo-card: #ffffff;
 }
 
+html {
+    scroll-padding-top: 80px;
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5em;
@@ -65,14 +70,14 @@ main {
     margin-top: 15px;
 }
 
-section.ficha {
+section#ficha {
     background-color: var(--fundo-card);
     padding: 20px;
     border-radius: 10px;
     grid-column: 2;
 }
 
-main section.ficha img {
+main section#ficha img {
     display: block;
     margin: auto;
     margin-bottom: 15px;
@@ -85,13 +90,13 @@ main section.ficha img {
     outline: 5px solid var(--destaque);
 }
 
-section.ficha h1 {
+section#ficha h1 {
     color:  var(--destaque);
     margin: 15px 0px;
     text-align: center;
 }
 
-section.ficha p {
+section#ficha p {
     text-indent: 30px;
     text-align: justify;
 }
@@ -148,7 +153,7 @@ iframe {
 }
 
 
-article.skills {
+article#skills {
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -252,11 +257,11 @@ footer a:hover {
         justify-content: flex-end;
     }
 
-    article.skills {
+    article#skills {
         grid-template-columns: 1fr 1fr;
     }
 
-    article.skills h2 {
+    article#skills h2 {
         grid-column: 1 / -1;
     }
 
@@ -265,7 +270,7 @@ footer a:hover {
     grid-template-columns: auto 30vw 60vw auto;
     }
 
-    main section.ficha {
+    main section#ficha {
         
         margin-top: 20px;
         position: fixed;
@@ -273,11 +278,11 @@ footer a:hover {
         left: 20px;
     }
 
-    main section.ficha h1 {
+    main section#ficha h1 {
         font-size: 1.8em;
     }
 
-    main section.ficha img {
+    main section#ficha img {
         width: 60%;
     }
 
